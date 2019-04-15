@@ -33,7 +33,7 @@ class SearchBox extends Component {
   render() {
 
     return (
-      <div className="form-inline">
+      <div className="react-form">
         <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="form-control " />
         <Button
           type="submit"
