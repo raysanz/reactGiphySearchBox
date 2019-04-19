@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import '../App.css';
 import DisplayImages from './DisplayImages.js';
 
@@ -33,25 +33,38 @@ class SearchBox extends Component {
   render() {
 
     return (
-      <div className="react-form">
-        <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="form-control " />
-        <Button
-          type="submit"
-          value="Submit"
-          onClick={() => { this.fetchResults(this.state.searchQuery) }}
-          variant="secondary" size="lg"
-        >
-          Submit
+      <div className="parent">
+
+        <Container>
+          <Row className="justify-content-md-center">
+            <Col xs lg="2">
+
+            </Col>
+            <Col md="auto">
+
+
+              <div className="">
+                <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="" />
+
+                <Button
+                  type="submit"
+                  value="Submit"
+                  onClick={() => { this.fetchResults(this.state.searchQuery) }}
+                  variant="secondary"
+                >
+                  Submit
          </Button>
-        <Button 
-        className="info"
-        >
-        Info
-        
-        </Button>
+              </div>
+            </Col>
+            <Col xs lg="2">
+            </Col>
+          </Row>
+        </Container>
+
 
 
         <DisplayImages items={this.state.items} />
+
 
       </div>
     );
