@@ -43,14 +43,15 @@ class SearchBox extends Component {
             <Col md="auto">
 
 
-              <div className="">
+              <div className=" input-group">
                 <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="" />
 
                 <Button
                   type="submit"
                   value="Submit"
                   onClick={() => { this.fetchResults(this.state.searchQuery) }}
-                  variant="secondary"
+                  variant="outline-success"
+                  className="form-button"
                 >
                   Submit
          </Button>
@@ -61,7 +62,7 @@ class SearchBox extends Component {
           </Row>
         </Container>
 
-
+        <br></br>
 
         <DisplayImages items={this.state.items} />
 
