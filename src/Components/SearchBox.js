@@ -44,7 +44,7 @@ class SearchBox extends Component {
 
 
               <div className="input-group">
-                <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="form-input" />
+                <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="form-input text-center" />
 
                 <Button
                   type="submit"
