@@ -43,8 +43,8 @@ class SearchBox extends Component {
             <Col md="auto">
 
 
-              <div className=" input-group">
-                <input type="text" placeholder="Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="" />
+              <div className="input-group">
+                <input type="text" placeholder="    Search Gifs" id="search" value={this.state.value} onChange={this.handleChange} className="form-input" />
 
                 <Button
                   type="submit"

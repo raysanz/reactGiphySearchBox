@@ -36,7 +36,12 @@
   margin-top: 3em
 }
 
-.form-input
+.form-input{
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 20px; 
+
+}
 
 .form-button{
 }
