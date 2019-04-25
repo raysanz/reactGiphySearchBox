@@ -11,7 +11,8 @@ class DisplayImages extends Component {
                 {this.props.items.length > 0 &&
 
                     this.props.items.map(({ images }) => (
-                        <img src={images.preview_gif.url} width="200px" height="200px" />
+                       
+                            <img src={images.preview_gif.url} width="200px" height="200px" className="" />
                     ))
                 }
             </div>

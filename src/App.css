@@ -45,3 +45,10 @@
 
 .form-button{
 }
+
+img{
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+  -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+  box-shadow: 0px 0px 3px 5px #f2e1f2; 
+  }
